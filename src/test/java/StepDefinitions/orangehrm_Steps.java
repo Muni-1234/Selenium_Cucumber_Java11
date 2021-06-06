@@ -57,7 +57,7 @@ public class orangehrm_Steps {
 		//Calling below Methods:
 		orangehrmlogoTest();
 		orangehrmTitleTest();
-		orangehrmLinksTest();
+		//orangehrmLinksTest();
 	}	
 
 	@And("User Enters User as {string} and Password as {string}")
@@ -84,7 +84,7 @@ public class orangehrm_Steps {
 		//Calling below Methods:
 		orangehrmlogoTest();
 		orangehrmTitleTest();
-		orangehrmLinksTest();
+		//orangehrmLinksTest();
 	}
 
 	@When("User Enters UserName and Password from Properties file")
@@ -144,9 +144,9 @@ public class orangehrm_Steps {
 		Assert.assertEquals(driver.getTitle(),"OrangeHRM");
 	}
 	
-	public void orangehrmLinksTest() {
+	/*public void orangehrmLinksTest() {
 		List<WebElement> hrmLinksList = driver.findElements(By.cssSelector("a"));
 		hrmLinksList.forEach(ele -> System.out.println(ele.getText()));
 		Assert.assertEquals(hrmLinksList.size(), 6);
-	}
+	}*/
 }
